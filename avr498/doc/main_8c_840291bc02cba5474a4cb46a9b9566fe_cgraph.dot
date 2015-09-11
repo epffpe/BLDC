@@ -1,0 +1,28 @@
+digraph G
+{
+  edge [fontname="FreeSans.ttf",fontsize=10,labelfontname="FreeSans.ttf",labelfontsize=10];
+  node [fontname="FreeSans.ttf",fontsize=10,shape=record];
+  rankdir=LR;
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node2 [label="mc_init_HW",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__drv_8c.html#4b4b083e0871dfd8d9f1b97ae9856d79",tooltip="This function initializes the hardware/software resources required for motor driver..."];
+  Node2 -> Node3 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node3 [label="ADCInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__drv_8c.html#39150f192703c8fc5f1885bc21deee7f"];
+  Node2 -> Node4 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node4 [label="PLLInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__drv_8c.html#fd97a5c7082aa9e61208673dc43111cf"];
+  Node2 -> Node5 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node5 [label="PortsInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__drv_8c.html#262818491cabe93389170ea942205ba5"];
+  Node2 -> Node6 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node6 [label="PWMInit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__drv_8c.html#d95396827638cbb90d74fa0f9e3f7809"];
+  Node2 -> Node7 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node7 [label="Timer0Init",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__drv_8c.html#f694ac03b6ae45fa92320fb1ddeee7a9"];
+  Node1 -> Node8 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node8 [label="mc_regulation_loop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__control_8c.html#f3a4fbf44fc73b105bfb36a2ad11024c",tooltip="This function launches speed control or no regulation."];
+  Node8 -> Node9 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node9 [label="mc_set_duty_cycle",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__control_8c.html#b9649ab2c1b8706d8cdfb2ce2b42c90c",tooltip="This function set duty cycle."];
+  Node1 -> Node10 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node10 [label="mc_start_motor",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__control_8c.html#d58655cc1f46c6a43f7afb8570428739",tooltip="Executes the motor startup sequence."];
+  Node10 -> Node11 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+  Node11 [label="delay_us",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$mc__control_8c.html#40beb3300dc6f6972acf9068bec4c7cf",tooltip="This function generates a delay used during startup."];
+  Node10 -> Node9 [color="midnightblue",fontsize=10,style="solid",fontname="FreeSans.ttf"];
+}
